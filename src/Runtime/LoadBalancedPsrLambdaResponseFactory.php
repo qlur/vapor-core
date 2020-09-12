@@ -46,7 +46,7 @@ class LoadBalancedPsrLambdaResponseFactory
         }
 
         if (! isset($headers['Content-Type']) || empty($headers['Content-Type'])) {
-            $headers['Content-Type'] = ['text/html'];
+            $headers['Content-Type'] = ['text/javascript'];
         }
 
         return $headers;

@@ -33,7 +33,7 @@ class EnsureBinaryEncoding
      */
     public static function isBase64EncodingRequired(Response $response): bool
     {
-        $contentType = strtolower($response->headers->get('Content-Type', 'text/html'));
+        $contentType = strtolower($response->headers->get('Content-Type', 'text/javascript'));
 
         if (Str::startsWith($contentType, 'text/') ||
             Str::contains($contentType, ['xml', 'json'])) {

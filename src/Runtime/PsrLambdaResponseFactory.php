@@ -55,7 +55,7 @@ class PsrLambdaResponseFactory
         }
 
         if (! isset($headers['Content-Type'])) {
-            $headers['Content-Type'] = 'text/html';
+            $headers['Content-Type'] = 'text/javascript';
         }
 
         return $headers;
